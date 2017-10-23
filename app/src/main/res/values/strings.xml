@@ -3,11 +3,11 @@
     <string name="intro">hello</string>
     <string name="intro_text">This activity demonstrates the use of Relativelayout with to internal Liner layouts</string>
     <string name="name">name</string>
-    <string name="option1">op1</string>
-    <string name="option2">op2</string>
-    <string name="option3">op3</string>
+    <string name="option1">option1</string>
+    <string name="option2">option2</string>
+    <string name="option3">option3</string>
     <string name="ok">Press me!</string>
     <string name="button1">Alternative1</string>
     <string name="button2">Alternative2</string>
-
+    <string name="button3">Alternative3</string>
 </resources>
