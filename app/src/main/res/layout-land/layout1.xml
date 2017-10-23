@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_text"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="320dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvIntro"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/name"
+            />
+
+        <EditText
+            android:id="@+id/edEnterName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/nameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/ok" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="400dp"
+        android:id="@+id/LLcheckBoxes">
+
+        <CheckBox
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/option1" />
+
+        <CheckBox
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option2" />
+
+        <CheckBox
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/option3" />
+    </LinearLayout>
+    <View
+        android:id="@+id/vSeparateLine"
+        android:layout_width="5dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/radio"
+        android:layout_alignTop="@+id/LLcheckBoxes"
+        android:layout_below="@+id/linearLayout"
+        android:background="@android:color/darker_gray" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radio"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/LLcheckBoxes"
+        android:layout_alignEnd="@+id/linearLayout">
+
+    </LinearLayout>
+
+</RelativeLayout>
